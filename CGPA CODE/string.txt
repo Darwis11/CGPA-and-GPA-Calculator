@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CgpaCalculatorNew</string>
+    <string name="welcome_to_cgpa_calculator">Welcome to CGPA Calculator</string>
+    <string name="start_button">start</string>
+    <string name="what_is_your_credit_points">what is your credit points?</string>
+    <string name="what_is_your_second_credit_points">what is your second credit points?</string>
+    <string name="what_is_your_third_credit_points">what is your third credit points?</string>
+    <string name="what_is_your_fourth_credit_points">what is your fourth credit points?</string>
+    <string name="what_is_your_sixth_credit_points">what is your sixth credit points?</string>
+    <string name="what_is_your_first_grade_points">what is your first grade points?</string>
+    <string name="what_is_your_second_grade_points">what is your second grade points?</string>
+    <string name="what_is_your_third_grade_points">what is your third grade points?</string>
+    <string name="what_is_your_forth_grade_points">what is your forth grade points?</string>
+    <string name="what_is_your_fifth_grade_points">what is your fifth grade points?</string>
+    <string name="what_is_your_sixth_grade_points">what is your sixth grade points?</string>
+    <string name="what_is_your_seventh_grade_points">what is your seventh grade points?</string>
+    <string name="code1">code1</string>
+    <string name="code2">code2</string>
+    <string name="code3">code3</string>
+    <string name="code4">code4</string>
+    <string name="code5">code5</string>
+    <string name="code6">code6</string>
+    <string name="code7">code7</string>
+    <string name="your_gpa_result">your gpa result</string>
+    <string name="your_cgpa_result">your cgpa result</string>
+
+</resources>

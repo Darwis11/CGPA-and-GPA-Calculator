@@ -1,0 +1,91 @@
+package com.example.cgpacalculatornew;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class SecondPage extends AppCompatActivity {
+    private EditText
+            code1,code2,code3,code4,code5,code6,code7,
+            course1,course2,course3,course4,course5,course6,course7,
+            gradePoint1s,gradePoint2s,gradePoint3s,gradePoint4s,gradePoint5s,gradePoint6s,gradePoint7s,
+            creditPoints1,creditPoints2,creditPoints3,creditPoints4,creditPoints5,creditPoints6,
+            creditPoints7;
+    private TextView ViewJawapan;
+    private Button calculateAdd,calculateAgain;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); //hide the title bar
+        setContentView(R.layout.activity_second_page);
+
+        gradePoint1s = findViewById(R.id.gradePoints1);
+        gradePoint2s = findViewById(R.id.gradePoints2);
+        gradePoint3s = findViewById(R.id.gradePoints3);
+        gradePoint4s = findViewById(R.id.gradePoints4);
+        gradePoint5s = findViewById(R.id.gradePoints5);
+        gradePoint6s = findViewById(R.id.gradePoints6);
+        gradePoint7s = findViewById(R.id.gradePoints7);
+        ViewJawapan = findViewById(R.id.CgpaResult2);
+        calculateAdd = findViewById(R.id.calculate);
+
+        calculateAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (gradePoint1s.getText().toString().length() == 0 ) {
+                    gradePoint1s.setText("0");
+                }
+
+                if (gradePoint2s.getText().toString().length() == 0 ) {
+                    gradePoint2s.setText("0");
+                }
+
+                if (gradePoint3s.getText().toString().length() == 0 ) {
+                    gradePoint3s.setText("0");
+                }
+
+                if (gradePoint4s.getText().toString().length() == 0 ) {
+                    gradePoint4s.setText("0");
+                }
+
+                if (gradePoint5s.getText().toString().length() == 0 ) {
+                    gradePoint5s.setText("0");
+                }
+
+                if (gradePoint6s.getText().toString().length() == 0 ) {
+                    gradePoint6s.setText("0");
+                }
+
+                if (gradePoint7s.getText().toString().length() == 0 ) {
+                    gradePoint7s.setText("0");
+                }
+
+
+                int num1 = Integer.parseInt(gradePoint1s.getText().toString());
+                int num2 = Integer.parseInt(gradePoint2s.getText().toString());
+                int num3 = Integer.parseInt(gradePoint3s.getText().toString());
+                int num4 = Integer.parseInt(gradePoint4s.getText().toString());
+                int num5 = Integer.parseInt(gradePoint5s.getText().toString());
+                int num6 = Integer.parseInt(gradePoint6s.getText().toString());
+                int num7 = Integer.parseInt(gradePoint7s.getText().toString());
+
+                int sum = num1 + num2 + num3 + num4 + num5 + num6 + num7;
+
+                ViewJawapan.setText(String.valueOf(sum));
+
+            }
+        });
+
+    }
+
+
+}

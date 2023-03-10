@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cgpacalculatortitle"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="GPA &amp; CGPA CALCULATOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CodeCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/Course"
+        android:layout_width="87dp"
+        android:layout_height="18dp"
+        android:text="Course"
+        app:layout_constraintBottom_toTopOf="@+id/course1"
+        app:layout_constraintEnd_toStartOf="@+id/CreditPoints"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/CodeCourse"
+        app:layout_constraintTop_toBottomOf="@+id/cgpacalculatortitle"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/CreditPoints"
+        android:layout_width="88dp"
+        android:layout_height="23dp"
+        android:text="Credit Points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/GradePoints"
+        android:layout_width="87dp"
+        android:layout_height="18dp"
+        android:text="Grade Points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <EditText
+        android:id="@+id/course1"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="course"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toStartOf="@+id/creditPoints1"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/code1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/course2"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="course"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toStartOf="@+id/creditPoints2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/code2"
+        app:layout_constraintTop_toBottomOf="@+id/course1" />
+
+    <EditText
+        android:id="@+id/course3"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="course"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/creditPoints3"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/code3"
+        app:layout_constraintTop_toBottomOf="@+id/course2" />
+
+    <EditText
+        android:id="@+id/course7"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="course"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/creditPoints4"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/code4"
+        app:layout_constraintTop_toBottomOf="@+id/course3" />
+
+    <EditText
+        android:id="@+id/course4"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="course"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/creditPoints6"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/code6"
+        app:layout_constraintTop_toBottomOf="@+id/course5" />
+
+    <EditText
+        android:id="@+id/course6"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="course"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/creditPoints7"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/code7"
+        app:layout_constraintTop_toBottomOf="@+id/course4" />
+
+    <EditText
+        android:id="@+id/course5"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="course"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/creditPoints5"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/code5"
+        app:layout_constraintTop_toBottomOf="@+id/course7" />
+
+    <EditText
+        android:id="@+id/creditPoints1"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="CD"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/gradePoints1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/creditPoints2"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:hint="CD"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/gradePoints2"
+        app:layout_constraintTop_toBottomOf="@+id/creditPoints1" />
+
+    <EditText
+        android:id="@+id/creditPoints3"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="CD"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/gradePoints3"
+        app:layout_constraintTop_toBottomOf="@+id/creditPoints2" />
+
+    <EditText
+        android:id="@+id/creditPoints4"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="CD"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/gradePoints4"
+        app:layout_constraintTop_toBottomOf="@+id/creditPoints3" />
+
+    <EditText
+        android:id="@+id/creditPoints6"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="CD"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/gradePoints7"
+        app:layout_constraintTop_toBottomOf="@+id/creditPoints5" />
+
+    <EditText
+        android:id="@+id/creditPoints7"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="CD"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/gradePoints6"
+        app:layout_constraintTop_toBottomOf="@+id/creditPoints6" />
+
+    <EditText
+        android:id="@+id/creditPoints5"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="CD"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/gradePoints5"
+        app:layout_constraintTop_toBottomOf="@+id/creditPoints4" />
+
+    <EditText
+        android:id="@+id/gradePoints1"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="GP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gradePoints2"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="GP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePoints1" />
+
+    <EditText
+        android:id="@+id/gradePoints3"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="GP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePoints2" />
+
+    <EditText
+        android:id="@+id/gradePoints4"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="GP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePoints3" />
+
+    <EditText
+        android:id="@+id/gradePoints5"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="GP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePoints4" />
+
+    <EditText
+        android:id="@+id/gradePoints6"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="GP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePoints7" />
+
+    <EditText
+        android:id="@+id/gradePoints7"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="GP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePoints5" />
+
+    <EditText
+        android:id="@+id/code1"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CodeCourse" />
+
+    <EditText
+        android:id="@+id/code2"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code1" />
+
+    <EditText
+        android:id="@+id/code3"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code2" />
+
+    <EditText
+        android:id="@+id/code4"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code3" />
+
+    <EditText
+        android:id="@+id/code5"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code4" />
+
+    <EditText
+        android:id="@+id/code6"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code5" />
+
+    <EditText
+        android:id="@+id/code7"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="code"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code6" />
+
+    <TextView
+        android:id="@+id/yourGpa"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:text="Your gpa is:"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/TotalCreditHrs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code7"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <TextView
+        android:id="@+id/CgpaResult2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="0"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/TotalCreditResult"
+        app:layout_constraintStart_toEndOf="@+id/yourGpa" />
+
+    <EditText
+        android:id="@+id/TotalCreditResult"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="   /60"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/calculate"
+        app:layout_constraintStart_toEndOf="@+id/TotalCreditHrs" />
+
+    <TextView
+        android:id="@+id/yourCgpa"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="12dp"
+        android:text="Your cgpa is:"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/calculateAgain"
+        app:layout_constraintEnd_toStartOf="@+id/CgpaResult"
+        app:layout_constraintTop_toBottomOf="@+id/creditPoints7"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <EditText
+        android:id="@+id/CgpaResult"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="cgpa"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateAgain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradePoints6"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <TextView
+        android:id="@+id/TotalCreditHrs"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="20dp"
+        android:text="Total credit: "
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/calculate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="28dp"
+        android:text="calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculateAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:text="calculate again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/calculate" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
